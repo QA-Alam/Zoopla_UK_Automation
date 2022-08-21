@@ -21,5 +21,34 @@ public class LoginElementsPage extends BasePage {
 	public WebElement getClickOnSignButton() {
 		return clickOnSignButton;
 	}
+	
+	@FindBy(id = "email")
+	@CacheLookup
+	private WebElement userName;
 
+	public WebElement getEnterUserName() {
+		return userName;
+	}
+	
+	@FindBy(id = "password")
+	@CacheLookup
+	private WebElement enterPwd;
+
+	public WebElement getEnterPwd() {
+		return enterPwd;
+	}
+	
+	@FindBy(xpath = "//*[@id='main-content']/div/div/form/button")
+	@CacheLookup
+	private WebElement signBTN;
+
+	public WebElement getSignBTN() {
+		return signBTN;
+	}
+
+	
+	public void getUserNameAndPwd(String uName, String pwd) {
+		getEnterUserName().sendKeys(uName);
+		getEnterPwd().sendKeys(pwd);
+	}
 }

@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-08-14T00:05:18.534Z",
+        "start_timestamp": "2022-08-21T00:41:12.011Z",
         "line": 5,
         "name": "User able to login the application \u0026 verfy the users informations on the grid",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5236878700,
+              "duration": 5351479400,
               "status": "passed"
             },
             "line": 7,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 8438123600,
+              "duration": 6312563400,
               "status": "passed"
             },
             "line": 8,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 4202141400,
+              "duration": 3674139500,
               "status": "passed"
             },
             "line": 9,
@@ -55,6 +55,7 @@
           },
           {
             "result": {
+              "duration": 474873100,
               "status": "passed"
             },
             "line": 10,
@@ -66,6 +67,7 @@
           },
           {
             "result": {
+              "duration": 117683200,
               "status": "passed"
             },
             "line": 11,
