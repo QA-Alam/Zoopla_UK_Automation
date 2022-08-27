@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import zoopla.uk.basepage.BasePage;
+import zoopla.uk.generic.WaitHelper;
 
 public class LoginElementsPage extends BasePage {
 
@@ -21,7 +22,7 @@ public class LoginElementsPage extends BasePage {
 	public WebElement getClickOnSignButton() {
 		return clickOnSignButton;
 	}
-	
+
 	@FindBy(id = "email")
 	@CacheLookup
 	private WebElement userName;
@@ -29,7 +30,7 @@ public class LoginElementsPage extends BasePage {
 	public WebElement getEnterUserName() {
 		return userName;
 	}
-	
+
 	@FindBy(id = "password")
 	@CacheLookup
 	private WebElement enterPwd;
@@ -37,8 +38,8 @@ public class LoginElementsPage extends BasePage {
 	public WebElement getEnterPwd() {
 		return enterPwd;
 	}
-	
-	@FindBy(xpath = "//*[@id='main-content']/div/div/form/button")
+
+	@FindBy(xpath = "//*[text()='Sign in']")
 	@CacheLookup
 	private WebElement signBTN;
 
@@ -46,9 +47,19 @@ public class LoginElementsPage extends BasePage {
 		return signBTN;
 	}
 
+	@FindBy(xpath = "//*[text()='Welcome back to your account']")
+	@CacheLookup
+	private WebElement verifyText;
+	public WebElement getVerifyText() {
+		return verifyText;
+	}
+
+	
 	
 	public void getUserNameAndPwd(String uName, String pwd) {
+		WaitHelper.waitUntilElementToBeClickable(getEnterUserName());
 		getEnterUserName().sendKeys(uName);
+		WaitHelper.waitUntilElementToBeClickable(getEnterPwd());
 		getEnterPwd().sendKeys(pwd);
 	}
 }

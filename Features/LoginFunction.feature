@@ -1,6 +1,5 @@
 Feature: User able to use zoopla application, login the application, searching the property, buy the property 
 
-
 @Sanity
 Scenario:  User able to login the application & verfy the users informations on the grid
 

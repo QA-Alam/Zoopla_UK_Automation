@@ -7,9 +7,10 @@ import io.cucumber.testng.CucumberOptions;
 		plugin= {"pretty","json:target/cucumber.json" },		 	
 		features = {".//Features/"}, 
         glue = {"zoopla.uk.stepdefintaions",}, 	
-		dryRun = false, 
-		monochrome = true, 
-		strict = true,
+        	   //dryRun = false,  // Stop the execution and give me new steps = true
+        	                               // If false then browser and steps 
+                monochrome = true, 
+               //strict = false,
 		tags = "@Sanity")   
 public class MyRunner extends AbstractTestNGCucumberTests {
 

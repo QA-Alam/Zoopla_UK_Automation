@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -14,19 +15,18 @@ public class BasePage {
 	public static Properties prop;
 	public static WebDriver driver;
 
-	
 	public BasePage() {
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(
-					System.getProperty("user.dir") + "/src/main/java/config/Config.properties");
+			FileInputStream ip = new FileInputStream("./src/main/java/config/Config.properties");
+			// System.getProperty("user.dir") + "/src/main/java/config/Config.properties");
 			prop.load(ip);
-
 		} catch (FileNotFoundException e) {
 			System.out.println(e.getMessage());
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
-		}}
+		}
+	}
 
 	public static void initializations() {
 		// System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");

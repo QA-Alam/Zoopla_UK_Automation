@@ -3,8 +3,8 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-08-21T00:41:12.011Z",
-        "line": 5,
+        "start_timestamp": "2022-08-27T02:59:46.013Z",
+        "line": 4,
         "name": "User able to login the application \u0026 verfy the users informations on the grid",
         "description": "",
         "id": "user-able-to-use-zoopla-application--login-the-application--searching-the-property--buy-the-property;user-able-to-login-the-application-\u0026-verfy-the-users-informations-on-the-grid",
@@ -13,10 +13,10 @@
         "steps": [
           {
             "result": {
-              "duration": 5351479400,
+              "duration": 5505470900,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "User able to open a any browser",
             "match": {
               "location": "zoopla.uk.stepdefintaions.LoginTest.user_able_to_open_a_any_browser()"
@@ -25,10 +25,10 @@
           },
           {
             "result": {
-              "duration": 6312563400,
+              "duration": 9838027400,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "User able to enter \"https://www.zoopla.co.uk/\" url",
             "match": {
               "arguments": [
@@ -43,10 +43,10 @@
           },
           {
             "result": {
-              "duration": 3674139500,
+              "duration": 5884275300,
               "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "User able to click on sign-in button",
             "match": {
               "location": "zoopla.uk.stepdefintaions.LoginTest.user_able_to_click_on_sign_in_button()"
@@ -55,10 +55,10 @@
           },
           {
             "result": {
-              "duration": 474873100,
+              "duration": 659460700,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "User able to enter valid userName \u0026 password",
             "match": {
               "location": "zoopla.uk.stepdefintaions.LoginTest.user_able_to_enter_valid_userName_password()"
@@ -67,10 +67,10 @@
           },
           {
             "result": {
-              "duration": 117683200,
+              "duration": 472893200,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "User able to click on login button",
             "match": {
               "location": "zoopla.uk.stepdefintaions.LoginTest.user_able_to_click_on_login_button()"
@@ -79,9 +79,10 @@
           },
           {
             "result": {
+              "duration": 4165956500,
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "User can verify the user information \"Welcome back to your account\" on the grid",
             "match": {
               "arguments": [
