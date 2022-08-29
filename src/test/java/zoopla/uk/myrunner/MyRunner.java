@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		plugin= {"pretty","json:target/cucumber.json" },		 	
+		plugin = {"pretty","json:target/cucumber.json" },		 	
 		features = {".//Features/"}, 
         glue = {"zoopla.uk.stepdefintaions",}, 	
         	   //dryRun = false,  // Stop the execution and give me new steps = true

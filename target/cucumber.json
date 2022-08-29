@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-08-27T02:59:46.013Z",
+        "start_timestamp": "2022-08-28T17:38:44.905Z",
         "line": 4,
         "name": "User able to login the application \u0026 verfy the users informations on the grid",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5505470900,
+              "duration": 4210410300,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 9838027400,
+              "duration": 4935282900,
               "status": "passed"
             },
             "line": 7,
@@ -43,8 +43,9 @@
           },
           {
             "result": {
-              "duration": 5884275300,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException\r\n\tat java.base/java.util.Objects.requireNonNull(Objects.java:208)\r\n\tat org.openqa.selenium.support.ui.FluentWait.\u003cinit\u003e(FluentWait.java:106)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.\u003cinit\u003e(WebDriverWait.java:85)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.\u003cinit\u003e(WebDriverWait.java:45)\r\n\tat zoopla.uk.generic.WaitHelper.waitUntilElementToBeClickable(WaitHelper.java:14)\r\n\tat zoopla.uk.stepdefintaions.LoginTest.user_able_to_click_on_sign_in_button(LoginTest.java:30)\r\n\tat ✽.User able to click on sign-in button(file:///C:/Users/User/eclipse-workspace/Zoopla_E2E/./Features/LoginFunction.feature:8)\r\n",
+              "duration": 6981800,
+              "status": "failed"
             },
             "line": 8,
             "name": "User able to click on sign-in button",
@@ -55,8 +56,7 @@
           },
           {
             "result": {
-              "duration": 659460700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "User able to enter valid userName \u0026 password",
@@ -67,8 +67,7 @@
           },
           {
             "result": {
-              "duration": 472893200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "User able to click on login button",
@@ -79,8 +78,7 @@
           },
           {
             "result": {
-              "duration": 4165956500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "User can verify the user information \"Welcome back to your account\" on the grid",

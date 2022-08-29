@@ -28,25 +28,24 @@ public class CommonUtility extends BasePage {
 		return action;
 	}
 
-	
-	public static boolean getVerifyTheResult(String Expected, String Actual) {
-		Assert.assertEquals(Expected, Actual);
-		if (Expected.equals(Actual)) {
-			System.out.println("Expected And Actual are equal");
-		}else {
-			System.out.println("Expected And Actual dose not equal");
+	public static boolean getVerifyTheResult(String ExpectedResult, String Actual) {
+		Assert.assertEquals(ExpectedResult, Actual);
+		if (ExpectedResult.equals(Actual)) {
+			System.out.println("Expected & Actual are equals ");
+		} else {
+			System.out.println("Expected & Actual are not equals ");
 		}
+
 		return true;
+
 	}
-	
+
 	// JS click
 	public static void getJSClick(WebElement ele) {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", ele);
 
 	}
-
-	
 
 	public static void get() {
 		// First - set the wait parameters

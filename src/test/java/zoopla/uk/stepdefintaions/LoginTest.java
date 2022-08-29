@@ -1,9 +1,5 @@
 package zoopla.uk.stepdefintaions;
 
-
-
-import org.testng.Assert;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -17,17 +13,20 @@ public class LoginTest extends BasePage {
 
 	@Given("^User able to open a any browser$")
 	public void user_able_to_open_a_any_browser() {
-		BasePage.initializations();
+	
+		startAutomations();
 		pf = new LoginElementsPage();
 	}
 
 	@Given("^User able to enter \"([^\"]*)\" url$")
 	public void user_able_to_enter_url(String url) {
+		logger.info("User able to enter the url  ");
 		driver.get(url);
 	}
 
 	@When("^User able to click on sign-in button$")
 	public void user_able_to_click_on_sign_in_button() {
+		logger.info("User able to click on sign-in button ");
 		WaitHelper.waitUntilElementToBeClickable(pf.getClickOnSignButton());
 		CommonUtility.getActionClick(pf.getClickOnSignButton());
 		// pf.getClickOnSignButton().click();
@@ -35,38 +34,36 @@ public class LoginTest extends BasePage {
 
 	@When("^User able to enter valid userName & password$")
 	public void user_able_to_enter_valid_userName_password() {
+		logger.info("User able to enter valid userName & password ");
 		pf.getUserNameAndPwd(prop.getProperty("userName"), prop.getProperty("pwd"));
 	}
 
 	@When("^User able to click on login button$")
 	public void user_able_to_click_on_login_button() {
+		logger.info("User able to click on login button");
 		// CommonUtility.getActionClick(pf.getSignBTN());
 		WaitHelper.waitUntilElementToBeClickable(pf.getSignBTN());
-		
-		//driver.navigate().refresh();
-		CommonUtility.getActionClick(pf.getSignBTN());
-		//CommonUtility.getJSClick(pf.getSignBTN());
 
+		// driver.navigate().refresh();
+		CommonUtility.getActionClick(pf.getSignBTN());
+		// CommonUtility.getJSClick(pf.getSignBTN());
 	}
 
 	@Then("^User can verify the user information \"([^\"]*)\" on the grid$")
 	public void user_can_verify_the_user_information_on_the_grid(String text) {
-		// This is function from utilities 
+        // First way of doing verification 
+		//Assert.assertEquals(text, pf.getVerifyText().getText());
+		//System.out.println("Expected  & Actual are equal ");
+		
+		 // 2nd way of doing verification 
+	/*	if (text.equals(pf.getVerifyText().getText())) {
+			System.out.println("Expected  & Actual are equal ");
+		}else {
+			System.out.println("Expected  & Actual are not equal ");
+		} */
+		
+		logger.info("User can verify the user information");
 		CommonUtility.getVerifyTheResult(text, pf.getVerifyText().getText());
-		
-       /*	// 2nd approach 
-		if (text.equals(pf.getVerifyText().getText())) {
-			System.out.println("Test is pass");
-		} else {
-			System.out.println("Test is failed");
-		}
-			
-		// first approach 
-		Assert.assertEquals(text, pf.getVerifyText().getText());
-		System.out.println(pf.getVerifyText().getText());	
-		*/
-		
-		//driver.quit();
 	}
 
 }

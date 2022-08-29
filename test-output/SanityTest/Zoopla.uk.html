@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Zoopla.uk</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 26 22:25:30 EDT 2022</td>
+<td>Started on:</td><td>Sun Aug 28 13:38:43 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16185 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10324 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,9 +76,26 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='zoopla.uk.myrunner.MyRunner.runScenario()'><b>runScenario</b><br>Test class: zoopla.uk.myrunner.MyRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to login the application & verfy the users informations on the grid", "Optional[User able to use zoopla application, login the application, searching the property, buy the property]"</td>
-<td></td>
-<td>15</td>
-<td>zoopla.uk.myrunner.MyRunner@209da20d</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:208)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:106)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
+	at zoopla.uk.generic.WaitHelper.waitUntilElementToBeClickable(WaitHelper.java:14)
+	at zoopla.uk.stepdefintaions.LoginTest.user_able_to_click_on_sign_in_button(LoginTest.java:30)
+	at ?.User able to click on sign-in button(file:///C:/Users/User/eclipse-workspace/Zoopla_E2E/./Features/LoginFunction.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2028042905", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2028042905'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:208)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:106)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
+	at zoopla.uk.generic.WaitHelper.waitUntilElementToBeClickable(WaitHelper.java:14)
+	at zoopla.uk.stepdefintaions.LoginTest.user_able_to_click_on_sign_in_button(LoginTest.java:30)
+	at ?.User able to click on sign-in button(file:///C:/Users/User/eclipse-workspace/Zoopla_E2E/./Features/LoginFunction.feature:8)
+</pre></div></td>
+<td>9</td>
+<td>zoopla.uk.myrunner.MyRunner@7fd7a283</td></tr>
 </table><p>
 </body>
 </html>

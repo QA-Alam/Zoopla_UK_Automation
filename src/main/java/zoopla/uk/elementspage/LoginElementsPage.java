@@ -46,6 +46,7 @@ public class LoginElementsPage extends BasePage {
 	public WebElement getSignBTN() {
 		return signBTN;
 	}
+	
 
 	@FindBy(xpath = "//*[text()='Welcome back to your account']")
 	@CacheLookup
