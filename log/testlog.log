@@ -46,3 +46,73 @@
 2022-08-28 13:38:45,743 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
 2022-08-28 13:38:49,146 - QA Lead Faisal -INFO - User able to enter the url  
 2022-08-28 13:38:54,082 - QA Lead Faisal -INFO - User able to click on sign-in button 
+2022-08-28 22:53:17,620 - QA Lead Faisal -INFO - ******** I am a chrome browser*********
+2022-08-28 22:53:20,317 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+2022-08-28 22:53:20,370 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-28 22:53:26,425 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-28 22:53:30,847 - QA Lead Faisal -INFO - User able to click on sign-in button 
+2022-08-28 22:56:32,473 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-28 23:00:56,175 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-28 23:02:18,328 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-28 23:02:42,997 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-28 23:03:04,978 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-28 23:04:08,311 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-28 23:06:12,282 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-28 23:11:19,814 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-28 23:12:47,088 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-28 23:14:04,573 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-28 23:19:51,526 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-30 10:07:04,322 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+2022-08-30 10:07:04,381 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-30 10:07:06,823 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-30 10:07:09,895 - QA Lead Faisal -INFO - User able to click on sign-in button 
+2022-08-30 10:10:49,450 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+2022-08-30 10:10:49,485 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-30 10:10:52,431 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-30 10:10:55,475 - QA Lead Faisal -INFO - User able to click on sign-in button 
+2022-08-30 10:12:14,597 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+2022-08-30 10:12:14,636 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-30 10:12:16,879 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-30 10:12:19,734 - QA Lead Faisal -INFO - User able to click on sign-in button 
+2022-08-30 10:13:23,014 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+2022-08-30 10:13:23,054 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-30 10:13:25,322 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-30 10:13:28,270 - QA Lead Faisal -INFO - User able to click on sign-in button 
+2022-08-30 10:13:29,699 - QA Lead Faisal -INFO - User able to enter valid userName & password 
+2022-08-30 10:14:23,278 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+2022-08-30 10:14:23,324 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-30 10:14:25,615 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-30 10:14:28,262 - QA Lead Faisal -INFO - User able to click on sign-in button 
+2022-08-30 10:14:29,900 - QA Lead Faisal -INFO - User able to enter valid userName & password 
+2022-08-30 10:14:30,378 - QA Lead Faisal -INFO - User able to click on login button
+2022-08-30 10:14:30,724 - QA Lead Faisal -INFO - User can verify the user information
+2022-08-30 10:23:20,946 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+2022-08-30 10:23:20,991 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-30 10:23:24,064 - QA Lead Faisal -INFO - User able to enter the url  
+2022-08-30 10:23:27,407 - QA Lead Faisal -INFO - User able to click on sign-in button 
+2022-08-30 10:23:29,220 - QA Lead Faisal -INFO - User able to enter valid userName & password 
+2022-08-30 10:23:29,729 - QA Lead Faisal -INFO - User able to click on login button
+2022-08-30 10:23:31,732 - QA Lead Faisal -INFO - User can verify the user information
+2022-09-01 14:29:54,019 - QA Lead Faisal -INFO - User able to enter the url  
+2022-09-01 14:30:39,023 - QA Lead Faisal -INFO - User able to enter the url  
+2022-09-01 14:30:39,031 - QA Lead Faisal -INFO - User able to click on sign-in button 
+2022-09-01 14:58:21,193 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+2022-09-01 14:58:21,256 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-09-01 14:58:24,360 - QA Lead Faisal -INFO - User able to enter the url  
+2022-09-01 14:58:27,152 - QA Lead Faisal -INFO - User able to click on sign-in button 
+2022-09-01 15:01:35,087 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+2022-09-01 15:01:35,124 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-09-01 15:01:37,357 - QA Lead Faisal -INFO - User able to enter the url  
+2022-09-01 15:01:40,389 - QA Lead Faisal -INFO - User able to click on sign-in button 
+2022-09-01 15:04:02,266 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+2022-09-01 15:04:02,303 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-09-01 15:04:04,695 - QA Lead Faisal -INFO - User able to enter the url  
+2022-09-01 15:04:07,807 - QA Lead Faisal -INFO - User able to click on sign-in button 
+2022-09-03 16:39:38,261 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+2022-09-03 16:39:38,504 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-09-03 16:39:49,549 - QA Lead Faisal -INFO - User able to enter the url  
+2022-09-03 16:40:03,383 - QA Lead Faisal -INFO - User able to click on sign-in button 
+2022-09-04 21:57:02,993 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+2022-09-04 21:57:03,044 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-09-04 21:57:08,311 - QA Lead Faisal -INFO - User able to enter the url  
+2022-09-04 21:57:13,426 - QA Lead Faisal -INFO - User able to click on sign-in button 

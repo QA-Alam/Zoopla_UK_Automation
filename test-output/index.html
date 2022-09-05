@@ -131,13 +131,19 @@
                   </a> <!-- runScenario("User able to login the application & verfy the users informations on the grid", "Optional[User able...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("User able to login the application & verfy the users informations on the grid", "Optional[User able to use zoopla application, login the application, searching the property, buy the property]")</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at java.base/java.util.Objects.requireNonNull(Objects.java:208)
-	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:106)
-	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
-	at zoopla.uk.generic.WaitHelper.waitUntilElementToBeClickable(WaitHelper.java:14)
-	at zoopla.uk.stepdefintaions.LoginTest.user_able_to_click_on_sign_in_button(LoginTest.java:30)
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at zoopla.uk.generic.WaitHelper.waitUntilElementToBeClickable(WaitHelper.java:13)
+	at zoopla.uk.stepdefintaions.LoginTest.user_able_to_click_on_sign_in_button(LoginTest.java:31)
 	at ✽.User able to click on sign-in button(file:///C:/Users/User/eclipse-workspace/Zoopla_E2E/./Features/LoginFunction.feature:8)
 
 </div> <!-- stack-trace -->
@@ -211,12 +217,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'zoopla.uk.myrunner.MyRunner')
-data.setCell(0, 3, 9472);
+data.setCell(0, 3, 28232);
 window.suiteTableData['SanityTest']= { tableData: data, tableDiv: 'times-div-SanityTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-SanityTest">
               </div> <!-- times-div-SanityTest -->
             </div> <!-- times-div -->
@@ -251,11 +257,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("User able to login the application & verfy the users informations on the grid", "Optional[User able...)</span>
-                <span class="method-start">631 ms</span>
+                <span class="method-start">763 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">10109 ms</span>
+                <span class="method-start">29022 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

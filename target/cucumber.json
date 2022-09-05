@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-08-28T17:38:44.905Z",
+        "start_timestamp": "2022-09-05T01:57:01.268Z",
         "line": 4,
         "name": "User able to login the application \u0026 verfy the users informations on the grid",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4210410300,
+              "duration": 6993665400,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 4935282900,
+              "duration": 5117271600,
               "status": "passed"
             },
             "line": 7,
@@ -43,8 +43,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\r\n\tat java.base/java.util.Objects.requireNonNull(Objects.java:208)\r\n\tat org.openqa.selenium.support.ui.FluentWait.\u003cinit\u003e(FluentWait.java:106)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.\u003cinit\u003e(WebDriverWait.java:85)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.\u003cinit\u003e(WebDriverWait.java:45)\r\n\tat zoopla.uk.generic.WaitHelper.waitUntilElementToBeClickable(WaitHelper.java:14)\r\n\tat zoopla.uk.stepdefintaions.LoginTest.user_able_to_click_on_sign_in_button(LoginTest.java:30)\r\n\tat ✽.User able to click on sign-in button(file:///C:/Users/User/eclipse-workspace/Zoopla_E2E/./Features/LoginFunction.feature:8)\r\n",
-              "duration": 6981800,
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)\" because \"this.searchContext\" is null\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat zoopla.uk.generic.WaitHelper.waitUntilElementToBeClickable(WaitHelper.java:13)\r\n\tat zoopla.uk.stepdefintaions.LoginTest.user_able_to_click_on_sign_in_button(LoginTest.java:31)\r\n\tat ✽.User able to click on sign-in button(file:///C:/Users/User/eclipse-workspace/Zoopla_E2E/./Features/LoginFunction.feature:8)\r\n",
+              "duration": 59146500,
               "status": "failed"
             },
             "line": 8,

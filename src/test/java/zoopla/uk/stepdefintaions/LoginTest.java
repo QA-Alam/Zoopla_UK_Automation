@@ -1,8 +1,9 @@
 package zoopla.uk.stepdefintaions;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
+import io.cucumber.java.en.*;
 import zoopla.uk.basepage.BasePage;
 import zoopla.uk.elementspage.LoginElementsPage;
 import zoopla.uk.generic.CommonUtility;
@@ -13,9 +14,9 @@ public class LoginTest extends BasePage {
 
 	@Given("^User able to open a any browser$")
 	public void user_able_to_open_a_any_browser() {
-	
-		startAutomations();
-		pf = new LoginElementsPage();
+		// pf = new LoginElementsPage();
+		pf = PageFactory.initElements(driver, LoginElementsPage.class);
+		initializations();
 	}
 
 	@Given("^User able to enter \"([^\"]*)\" url$")
@@ -29,6 +30,7 @@ public class LoginTest extends BasePage {
 		logger.info("User able to click on sign-in button ");
 		WaitHelper.waitUntilElementToBeClickable(pf.getClickOnSignButton());
 		CommonUtility.getActionClick(pf.getClickOnSignButton());
+		// CommonUtility.getJSClick(pf.getClickOnSignButton());
 		// pf.getClickOnSignButton().click();
 	}
 
@@ -51,19 +53,21 @@ public class LoginTest extends BasePage {
 
 	@Then("^User can verify the user information \"([^\"]*)\" on the grid$")
 	public void user_can_verify_the_user_information_on_the_grid(String text) {
-        // First way of doing verification 
-		//Assert.assertEquals(text, pf.getVerifyText().getText());
-		//System.out.println("Expected  & Actual are equal ");
-		
-		 // 2nd way of doing verification 
-	/*	if (text.equals(pf.getVerifyText().getText())) {
+		// First way of doing verification
+		Assert.assertEquals(text, pf.getVerifyText().getText());
+		System.out.println("Expected & Actual are equal ");
+
+		// 2nd way of doing verification
+
+		if (text.equals(pf.getVerifyText().getText())) {
 			System.out.println("Expected  & Actual are equal ");
-		}else {
+		} else {
 			System.out.println("Expected  & Actual are not equal ");
-		} */
-		
+		}
+
 		logger.info("User can verify the user information");
 		CommonUtility.getVerifyTheResult(text, pf.getVerifyText().getText());
+		
 	}
 
 }

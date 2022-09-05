@@ -15,7 +15,7 @@ public class LoginElementsPage extends BasePage {
 
 	}
 
-	@FindBy(xpath = "//*[@id='__next']/div/header/div/div/nav/div[3]/div[2]/ul/li[3]/a")
+	@FindBy(xpath = "(//*[text()='Sign in'])[3]")
 	@CacheLookup
 	private WebElement clickOnSignButton;
 

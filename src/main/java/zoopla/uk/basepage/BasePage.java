@@ -19,12 +19,11 @@ public class BasePage {
 
 	public static Logger logger;
 	public static Properties prop;
-	public static WebDriver driver;
+	public static WebDriver driver = null;
 
 	public BasePage() {
 		logger = Logger.getLogger("QA Lead Faisal");
 		PropertyConfigurator.configure("log4j.properties");
-
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream("./src/main/java/config/Config.properties");
@@ -43,29 +42,28 @@ public class BasePage {
 		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-	//	System.out.println(prop.getProperty("URL"));
+		// System.out.println(prop.getProperty("URL"));
 	}
-	
-	
-	
 
 	public  void startAutomations() {
-/*		String browserName = prop.getProperty("browser");	
-		if (browserName.equalsIgnoreCase("chrome")) {*/
+		System.out.println("Test " + driver);
+		String browserName = prop.getProperty("browser");
+		System.out.println("Test " + driver);
+		if (browserName.equalsIgnoreCase("chrome")) {
 			logger.info("******** I am a chrome browser*********");
-			//System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
-			 WebDriverManager.chromedriver().setup();
-			 driver = new ChromeDriver();
+			// System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
 
-/*		} else if (browserName.equalsIgnoreCase("edge")) {
+		} else if (browserName.equalsIgnoreCase("edge")) {
 			logger.info("******** I am a edge browser*********");
 			System.setProperty("webdriver.edge.driver", "./Drivers/msedgedriver.exe");
-			 driver = new EdgeDriver();
+			driver = new EdgeDriver();
 
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.geckodriver.driver", "/Drivers/geckodriver.exe");
-			 driver = new FirefoxDriver();
-		}*/
+			driver = new FirefoxDriver();
+		}
 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -73,4 +71,4 @@ public class BasePage {
 
 	}
 
-	}
+}

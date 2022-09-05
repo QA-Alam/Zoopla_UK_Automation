@@ -9,17 +9,23 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">SanityTest</th></tr>
-<tr><td><a href="#t0">Zoopla.uk</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">10,324</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Zoopla.uk</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">29,395</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SanityTest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Zoopla.uk &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">zoopla.uk.myrunner.MyRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1661708324626</td><td rowspan="1">9472</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SanityTest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Zoopla.uk &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">zoopla.uk.myrunner.MyRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1662237575704</td><td rowspan="1">28232</td></tr></tbody>
 </table>
-<h2>Zoopla.uk</h2><h3 id="m0">zoopla.uk.myrunner.MyRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User able to login the application &amp; verfy the users informations on the grid&quot;</td><td>&quot;Optional[User able to use zoopla application, login the application, searching the property, buy the property]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException
-	at java.base/java.util.Objects.requireNonNull(Objects.java:208)
-	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:106)
-	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
-	at zoopla.uk.generic.WaitHelper.waitUntilElementToBeClickable(WaitHelper.java:14)
-	at zoopla.uk.stepdefintaions.LoginTest.user_able_to_click_on_sign_in_button(LoginTest.java:30)
+<h2>Zoopla.uk</h2><h3 id="m0">zoopla.uk.myrunner.MyRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User able to login the application &amp; verfy the users informations on the grid&quot;</td><td>&quot;Optional[User able to use zoopla application, login the application, searching the property, buy the property]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at zoopla.uk.generic.WaitHelper.waitUntilElementToBeClickable(WaitHelper.java:13)
+	at zoopla.uk.stepdefintaions.LoginTest.user_able_to_click_on_sign_in_button(LoginTest.java:31)
 	at ✽.User able to click on sign-in button(file:///C:/Users/User/eclipse-workspace/Zoopla_E2E/./Features/LoginFunction.feature:8)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
