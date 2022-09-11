@@ -36,7 +36,7 @@ public class BasePage {
 		}
 	}
 
-	public static void initializations() {
+	public static void initializations() { 
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
